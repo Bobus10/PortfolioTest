@@ -1,4 +1,4 @@
-import { experience } from '@/constants'
+import { experience } from '@/../constants'
 import { useLocale, useTranslations } from 'next-intl'
 
 export default function Experience() {

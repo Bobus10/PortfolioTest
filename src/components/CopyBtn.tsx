@@ -1,7 +1,7 @@
 "use client"
 
-import { email } from '@/constants'
-import { google } from '@/constants/icons'
+import { email } from '@/../constants'
+import { google } from '@/../constants/icons'
 import Image from 'next/image'
 
 interface Props {

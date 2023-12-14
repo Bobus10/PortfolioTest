@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import { projects } from '../../constants'
-import { github } from '@/constants/icons'
+import { projects } from '@/../constants'
+import { github } from '@/../constants/icons'
 import Link from 'next/link'
 import { useLocale, useTranslations } from 'next-intl'
 

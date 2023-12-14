@@ -1,14 +1,16 @@
-// import './globals.css'
-import Introduction from '@/src/components/Introduction'
-import Experience from '@/src/components/Experience'
-import Projects from '@/src/components/Projects'
-import NavBar from '@/src/components/NavBar'
-import BottomBar from '@/src/components/BottomBar'
-import Contact from '@/src/components/Contact'
+// import '../globals.css'
+import Introduction from '@/components/Introduction'
+import AboutMe from '@/components/AboutMe'
+// import NavBar from '@/components/NavBar'
+import Experience from '@/components/Experience'
+import Projects from '@/components/Projects'
+// import BottomBar from '@/components/BottomBar'
+import Contact from '@/components/Contact'
+
 import {notFound} from 'next/navigation';
-import { ReactNode } from 'react'
 import {getTranslations, unstable_setRequestLocale} from 'next-intl/server';
-import {locales} from '../../config';
+import {ReactNode} from 'react';
+import {locales} from '@/config/config';
 
 type Props = {
   children: ReactNode;
@@ -38,8 +40,9 @@ export default async function LocaleLayout({
 
   // Enable static rendering
   unstable_setRequestLocale(locale);
+
   return (
-    <html lang={locale}>
+    <html className="h-full" lang={locale}>
       <body className='bg-gradient-to-b from-black via-blue-900 to-blue-500 h-full bg-no-repeat bg-fixed'>
         <div className='flex flex-row max-lg:flex-col gap-5 mt-16'>
           <header className='lg:w-1/2'>
@@ -50,7 +53,7 @@ export default async function LocaleLayout({
               </section>
               {/* About Me */}
               <section className='flex text-center items-center lg:px-20 px-10'>
-                {children}
+                <AboutMe/>
               </section>
               {/* Contact */}
               <div className=''>
@@ -81,6 +84,3 @@ export default async function LocaleLayout({
     </html>
   )
 }
-
-// todo?: Sekcje z edukacją
-// todo NavBar/BottomBar: Nawigacja po stronie
