@@ -7,41 +7,18 @@ import Experience from '@/components/Experience'
 import Projects from '@/components/Projects'
 // import BottomBar from '@/components/BottomBar'
 import Contact from '@/components/Contact'
+import { Metadata } from 'next'
 
-import {notFound} from 'next/navigation';
-import {getTranslations, unstable_setRequestLocale} from 'next-intl/server';
-import {ReactNode} from 'react';
-import {locales} from '@/config/config';
-
-type Props = {
-  children: ReactNode;
-  params: {locale: string};
-};
-
-export function generateStaticParams() {
-  return locales.map((locale) => ({locale}));
+export const metadata: Metadata = {
+  title: 'Portfolio Robert Kosieradzki',
+  description: 'Portfolio Robert Kosieradzki',
 }
 
-export async function generateMetadata({
-  params: {locale}
-}: Omit<Props, 'children'>) {
-  const t = await getTranslations({locale, namespace: 'LocaleLayout'});
-
-  return {
-    title: t('title')
-  };
-}
-
-export default async function LocaleLayout({
+export default function RootLayout({
   children,
-  params: {locale}
-}: Props) {
-  // Validate that the incoming `locale` parameter is valid
-  if (!locales.includes(locale as any)) notFound();
-
-  // Enable static rendering
-  unstable_setRequestLocale(locale);
-
+}: {
+  children: React.ReactNode
+}) {
   return (
     <html className="h-full" lang='en'>
       <body className='body'>
