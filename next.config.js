@@ -8,6 +8,7 @@ const config = {
     images: {
         unoptimized: true,
     },
+    important: true,
 };
 
 module.exports = withNextIntl(config);
