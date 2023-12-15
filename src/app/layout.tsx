@@ -43,7 +43,7 @@ export default async function LocaleLayout({
   unstable_setRequestLocale(locale);
 
   return (
-    <html className="h-full" lang={locale}>
+    <html className="h-full" lang='en'>
       <body className='body'>
         <div className='body-div'>
           <header className='lg:w-1/2'>
