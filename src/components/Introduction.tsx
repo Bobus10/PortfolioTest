@@ -5,7 +5,7 @@ export default function Introduction() {
     <div className=''>
         <section className='flex flex-col justify-center items-center gap-3 sm:gap-2'>
             <Image
-              src='/assets/images/git_profile.png'
+              src='./assets/images/git_profile.png'
               alt="GitHub Profile photo"
               width={220}
               height={220}
