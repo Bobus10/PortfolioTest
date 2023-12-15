@@ -1,5 +1,5 @@
-// import '../globals.css'
-import '../styles.css'
+import '../globals.css'
+// import '../styles.css'
 import Introduction from '@/components/Introduction'
 import AboutMe from '@/components/AboutMe'
 // import NavBar from '@/components/NavBar'
@@ -44,8 +44,8 @@ export default async function LocaleLayout({
 
   return (
     <html className="h-full" lang={locale}>
-      <body class='body'>
-        <div class='body-div'>
+      <body className='body'>
+        <div className='body-div'>
           <header className='lg:w-1/2'>
             <div className='lg:w-1/2 flex flex-col justify-center items-center lg:fixed gap-3'>
               {/* Short Introduction */}

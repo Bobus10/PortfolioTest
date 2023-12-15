@@ -1,14 +1,4 @@
-const withNextIntl = require('next-intl/plugin')(
-    './src/config/i18n.ts'
-);
-
 /** @type {import('next').NextConfig} */
-const config = {
-    output: 'export',
-    images: {
-        unoptimized: true,
-    },
-    important: true,
-};
+const nextConfig = {}
 
-module.exports = withNextIntl(config);
+module.exports = nextConfig
