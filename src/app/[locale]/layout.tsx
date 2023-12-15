@@ -44,8 +44,8 @@ export default async function LocaleLayout({
 
   return (
     <html className="h-full" lang={locale}>
-      <body className='body'>
-        <div className='body-div'>
+      <body class='body'>
+        <div class='body-div'>
           <header className='lg:w-1/2'>
             <div className='lg:w-1/2 flex flex-col justify-center items-center lg:fixed gap-3'>
               {/* Short Introduction */}
