@@ -1,6 +1,4 @@
 import * as icon from './icons'
-import daneEn from '../messages/en.json'
-import danePl from '../messages/pl.json'
 
 export const navLinks = [
     {
@@ -33,14 +31,8 @@ export const contacts = [
 export const experience = [
     {
         companyName: "Zakłady mięsne Zakrzewscy",
-        position: {
-            en: daneEn.Experience.positions.trainee,
-            pl: danePl.Experience.positions.trainee,
-        },
-        duties: {
-            en: daneEn.Experience.duties['0job'],
-            pl: danePl.Experience.duties['0job'],
-        },
+        position: "Trainee",
+        duties: "initial hardware diagnostics, repair of damaged components, configuration of network equipment",
         monthStart: "07",
         yearStart: "2022",
         monthEnd: "07",
@@ -48,14 +40,8 @@ export const experience = [
     },
     {
         companyName: "Alba komputery",
-        position: {
-            en: daneEn.Experience.positions.trainee,
-            pl: danePl.Experience.positions.trainee,
-        },
-        duties: {
-            en: daneEn.Experience.duties['1job'],
-            pl: danePl.Experience.duties['1job'],
-        },
+        position: "Trainee",
+        duties: "initial hardware diagnostics, repair of damaged components, hardware configuration and uploading the necessary software",
         monthStart: "05",
         yearStart: "2019",
         monthEnd: "05",
@@ -75,16 +61,9 @@ export const email = {
 
 export const projects = [
     {
-        // name: "Online shop",
-        name: { 
-            en: daneEn.Projects['0name'], 
-            pl: danePl.Projects['0name'],
-        },
+        name: "Online Shop",
         route: "https://github.com/Bobus10/Licencjat",
-        description: {
-            en: daneEn.Projects['0description'],
-            pl: danePl.Projects['0description'],
-        },
+        description: "Main page contains filters by price and product categories, page pagination. Shopping cart with necessary functions (changing the number of purchased products and deleting them). Section with completed orders. Admin panel for managing the store with the functions of adding, editing, previewing and deleting products.",
         technologies: [ 
             {
                 src: icon.laravel.src,
@@ -105,15 +84,9 @@ export const projects = [
         ],
     },
     {
-        name: { 
-            en: daneEn.Projects['1name'], 
-            pl: danePl.Projects['1name'],
-        },
+        name: "Todo list",
         route: "https://github.com/Bobus10/ToDoList",
-        description: {
-            en: daneEn.Projects['1description'],
-            pl: danePl.Projects['1description'],
-        },
+        description: "Adds, deletes and edits added tasks in real time. Completed tasks move to the section with other completed tasks. ",
         technologies: [ 
             {
                 src: icon.laravel.src,
@@ -134,15 +107,9 @@ export const projects = [
         ],
     },
     {
-        name: { 
-            en: daneEn.Projects['2name'], 
-            pl: danePl.Projects['2name'],
-        },
+        name: "Online test",
         route: "https://github.com/Bobus10/Bicycle_card_test",
-        description: {
-            en: daneEn.Projects['2description'],
-            pl: danePl.Projects['2description'],
-        },
+        description: "The application displays one question out of several, collecting the selected answers. After completing the test, the user has a preview of all questions with their own and correct answers",
         technologies: [ 
             {
                 src: icon.laravel.src,
@@ -163,15 +130,9 @@ export const projects = [
         ],
     },
     {
-        name: { 
-            en: daneEn.Projects['3name'], 
-            pl: danePl.Projects['3name'],
-        },
+        name: "Portfolio",
         route: "https://github.com/Bobus10/portfolio",
-        description: {
-            en: daneEn.Projects['3description'],
-            pl: danePl.Projects['3description'],
-        },
+        description: "Frontend side made in Next.js. Fully responsible. This website is intended to bring together all my projects and experience",
         technologies: [ 
             {
                 src: icon.next.src,

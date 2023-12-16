@@ -11,10 +11,10 @@ export default function Introduction() {
               height={220}
             />
             <p className="text-blue-200 text-3xl hover:text-bold hover:text-white">
-                Test Testowski
+                Robert Kosieradzki
             </p>
             <p className=" text-blue-500 text-lg">
-                Backend Developer
+                Laravel Developer
             </p>
             <hr className=" w-52 h-1 mx-auto m-2 bg-gray-100 border-0 rounded dark:bg-gray-700"></hr>
         </section>
