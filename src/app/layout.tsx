@@ -1,5 +1,4 @@
-import './globals.css'
-// import '../styles.css'
+import '#/public/styles/globals.css'
 import Introduction from '@/components/Introduction'
 import AboutMe from '@/components/AboutMe'
 // import NavBar from '@/components/NavBar'
@@ -14,11 +13,7 @@ export const metadata: Metadata = {
   description: 'Portfolio Robert Kosieradzki',
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout() {
   return (
     <html className="h-full" lang='en'>
       <body className='body'>
