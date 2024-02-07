@@ -7,17 +7,24 @@ import Projects from '@/components/Projects'
 // import BottomBar from '@/components/BottomBar'
 import Contact from '@/components/Contact'
 import { Metadata } from 'next'
+import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: 'Portfolio Robert Kosieradzki',
   description: 'Portfolio Robert Kosieradzki',
 }
-
+// bg-[url('./assets/images/banner.JPG')]
 export default function RootLayout() {
   return (
     <html className="h-full" lang='en'>
       <body className='body'>
         <div className='body-div'>
+          <Image
+          src='./assets/images/banner.JPG'
+          alt='gowno'
+          width={1500}
+          height={1500}
+          />
           <header className='lg:w-1/2'>
             <div className='lg:w-1/2 flex flex-col justify-center items-center lg:fixed gap-3'>
               {/* Short Introduction */}
